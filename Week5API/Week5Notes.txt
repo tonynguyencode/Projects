@@ -1,0 +1,49 @@
+// Ins_Event Delegation Note
+
+What is the project purpose?
+
+	- The new thing I can learn from this project is the button click and its design.
+	
+//They have a show letter button for every letter in the project. The primary learning should be learning how to build
+a proper board like this one.
+	
+<!-- Alphabet letter buttons -->
+They have a class id= "buttons" class="my-5"
+The new css material are: 
+	- display: inline-block
+	- cursor: pointer
+
+
+//Stu_Event 10
+
+	// Creaing an input 
+		var shoppingItem = $('input[name="shopping-input"]').val();   //This is where it will getting and storing the input value.
+
+	// In addition, for a <ul>, we can add <li> within it
+		var shoppingListItemE1 = $( '<li class="flex-row justify-space-between align-center p-2 bg-light text-dark">' );
+
+	// We will set the text to of that <li> or list to the shopping item
+
+		We can also append a BUTTON to a LIST 
+		shoppingListItemE1.append('<button class= "btn btn-danger btn-small delete-item-btn">Remove</button>'   );
+	
+	//If we hit the remove button, then form will be cleared.
+
+		$('input[name="shopping-input"]').value(''); //I set the value to blanks.
+
+	// To refer the object that the function is being used
+			
+		var btnClicked = $(event.target);
+
+		btnClicked.parent('li').remove(); //This code will trace back to the parent of this event target. AND remove it.
+
+	// This new object method can assign function with its object
+
+		shoppingListE1.on('click', '.delete-item-btn', handleRemoveItem);   //Event delegation on the 'shoppingListE1' to listen for click on any element with a 
+													// class of 'delete-item-btn' 
+		shoppingFormE1.on('submit', handleFormSubmit);											// This target a specific assets.
+		
+		//This is referring to the FORM with a button that can submit the form. It is an automacially function.
+
+
+		

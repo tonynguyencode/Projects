@@ -1,0 +1,14 @@
+What did I learned for today?
+
+	//Creating a LIST item function
+
+	var printSkills = function(name,date){
+		var listE1 = $('<li>');
+		var listDetai = name.concat('on', date);  //This function add the words 'on' with the name and date.
+		listE1.addClass('list-group-item').text(listDetail); //this statement will add the Class's properties to Listdetail
+		listE1.appendTo(skillsListE1); //This will add to the <ul>  </u;>
+	}
+	
+
+	//the 
+		return;   //This statement make the function won't execute anymore statements down below.

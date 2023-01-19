@@ -1,0 +1,13 @@
+//Part 1 Accomplished
+
+
+//Part 2 item list include
+	
+	+ This time I will add it using javascript/
+
++ Background image property
+
+	document.body.style.backgroundImage = "url('./assets/image.png')";
+
+	document.body.style.backgroundImage =
+  "url('https://sebhastian.com/img/default.png')";

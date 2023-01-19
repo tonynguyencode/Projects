@@ -1,0 +1,16 @@
+
+Things I learned:
+
+<ul id="sortable">
+
+</ul>
+
+
+Insering function to the program built within the program
+
+	<script>
+		$(function(){
+			$('#sortable').sortable();
+			$('#sortable').disableSelection();
+		});
+	</script>
